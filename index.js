@@ -16,11 +16,12 @@ function nowServing(people){
 }
 
 function currentLine(line){
-  if(line.length){
+  let len = line.length;
+  if(len){
     let output = "The line is currently: ";
     let indexedPeople = [];
 
-    for(let i=0; i<line.length; i++){
+    for(let i=0; i<len; i++){
       let position = i + 1;
       let person = line[i];
       indexedPeople.push(`${position}. ${person}`);
