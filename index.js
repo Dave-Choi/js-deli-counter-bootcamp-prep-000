@@ -34,3 +34,27 @@ function currentLine(line){
     return "The line is currently empty.";
   }
 }
+
+let lastNumber = 1;
+function takeANumber(katzDeliLine){
+    katzDeliLine.push(lastNumber);
+    return `Welcome!  You're ticket number #${lastNumber++}`;
+}
+
+// takeANumber(katzDeliLine)  "Welcome! You're ticket number #1"
+// takeANumber(katzDeliLine)  "Welcome! Your'e ticker number #2"
+
+// nowServing(katzDeliLine)  "Currently serving #1"
+// nowServing(katzDeliLine)  "Currently serving #2" []
+
+// takeANumber(katzDeliLine)  "Welcome! You're ticket number #3"
+
+
+
+
+
+
+
+
+
+
